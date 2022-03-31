@@ -2,12 +2,12 @@
 
 Generates random HTTP headers for requests
 
-### install
+#### install
 ```
 pip install randomheader
 ```
 
-### usage
+#### usage
 
 ```python
 from randomheader import RandomHeader
@@ -18,7 +18,7 @@ print(rh.header())
 
 ```
 
-### example header
+#### example header
 
 ```json
 {
