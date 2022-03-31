@@ -1,8 +1,3 @@
-"""Generates random HTTP headers for requests"""
-
-__version__ = "0.1"
-
-
 from random import choice, sample, shuffle
 from typing import Iterator
 
