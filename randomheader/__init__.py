@@ -2,4 +2,4 @@
 
 __version__ = "0.4"
 
-from randomheader.header import RandomHeader
+from randomheader.header import Header
