@@ -1,13 +1,16 @@
 from random import choice, sample, shuffle
 from typing import Iterator
 
+import os
+base_path = os.path.abspath(os.path.dirname(__file__))
+
 
 class RandomHeader:
 
     def __init__(self) -> None:
-        self.accepts = [*self.readlines('agents/accepts.txt')]
-        self.referrers = [*self.readlines('agents/referrer.txt')]
-        self.user_agents = [*self.readlines('agents/user-agents.txt')]
+        self.accepts = [*self.readlines(f'{base_path}/agents/accepts.txt')]
+        self.referrers = [*self.readlines(f'{base_path}/agents/referrer.txt')]
+        self.user_agents = [*self.readlines(f'{base_path}/agents/user-agents.txt')]
 
     def header(self) -> dict:
         random_header = {
